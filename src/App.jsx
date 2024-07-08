@@ -9,7 +9,7 @@ function App(){
   
 
   useEffect(()=>{
-    fetch("http://localhost:5173/products.json")
+    fetch("https://guvi-shoppingcart.netlify.app/products.json")
     .then((response)=>response.json())
     .then((result)=>{
       if (result && result.data.length > 0) {
